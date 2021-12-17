@@ -32,7 +32,8 @@ pc.script.create('client', function (context) {
 
             var socketUrl = (window.location.protocol + '//' +
                              window.location.hostname + ':' + socketPort + '/socket');
-            var socket = this.socket = new Socket({ url: socketUrl });
+            // var socket = this.socket = new Socket({ url: socketUrl });
+            var socket = this.socket = new Socket({ url: 'https://thk.ifine.eu/socket' });
             
             this.connected = false;
 
